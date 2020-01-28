@@ -1,0 +1,408 @@
+<html>
+<title>
+LAYOUT
+</title>
+<head>
+<FONT ALIGN=left>
+<H1>HTML Layouts </H1> </FONT>
+ <a href="head.html"><input type="image" src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_1280.png" alt="Submit" align="left" width="48" height="48"></a>
+            <a href="responsive.html"><input type="image" src="https://www.freeiconspng.com/uploads/arrow-icon-28.png" alt="Submit" align="right" width="70" height="70"></a>
+            <br>
+            <P>HTML layout specifies a way in which the webpageis arranged.<BR><BR>
+    Every website has a specific layout to display content in a specific manner.<BR><BR>
+
+Following are different HTML5 elements which are used to define the different parts of a webpage.
+<BR><BR>
+1.&LT;header&GT;: It is used to define a header for a document or a section.<BR><BR>
+2.&LT;nav&GT;: It is used to define a container for navigation links<BR><BR>
+3.&LT;section&GT;: It is used to define a section in a document<BR><BR>
+4.&LT;article&GT;: It is used to define an independent self-contained article<BR><BR>
+5.&LT;aside&GT;: It is used to define content aside from the content (like a sidebar)<BR><BR>
+6.&LT;footer&GT;: It is used to define a footer for a document or a section<BR><BR>
+7.&LT;details&GT;: It is used to define additional details<BR><BR>
+</P>
+<BR>
+
+<FONT ALIGN=left>
+    <H1>HTML Layout Techniques</H1> </FONT>
+    <P>You can use the following methods to create multicolumn layouts:<BR><BR>
+    1.HTML tables<BR><BR>
+    2.CSS float property<BR><BR>
+    3.CSS framework<BR><BR>
+    4.CSS flexbox<BR><BR>
+    </P>
+     <BR>
+   <BR>
+
+
+                
+<FONT ALIGN=left>
+            <H1>HTML Tables</H1> </FONT>
+            <P>HTML tables are not recommended for your page layout.<BR><BR>
+                 The <table> element is designed to display tabular data.<BR><BR>
+                 It is not good for a layout.<BR><BR>
+                 It will complicate your code and make it very difficult to redesign your website after sometimes.
+        </P>
+ <BR>
+<BR>
+
+
+<FONT ALIGN=left>
+            <H1>CSS Frameworks</H1> </FONT>
+            <P>CSS provides many frameworks like W3.CSS, Bootstrap etc. to create your layout fast.
+        </P>
+ <BR>
+<BR>
+
+<FONT ALIGN=left>
+            <H1>CSS Float</H1> </FONT>
+            <P>You can create an entire web layout using CSS float property.
+
+                   <B> Advantage:</B> It is very easy to learn and use. You just learn how the float and clear properties work.
+                    
+                   <b>Disadvantage: </b> Floating elements are tied to the document flow, which may harm the flexibility.
+        </P>
+ <BR>
+<BR>
+
+<div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                        &LT;!DOCTYPE html&GT;  <BR><BR>
+                        &LT;html&GT; <BR><BR>
+                        &LT;head&GT;  <BR><BR>
+                        &LT;style&GT;  <BR><BR>
+                        div.container {  <BR><BR>
+                            width: 100%;  <BR><BR>
+                            border: 1px solid gray; <BR><BR> 
+                        }  <BR><BR>
+                          
+                        header, footer {  <BR><BR>
+                            padding: 1em;  <BR><BR>
+                            color: white;  <BR><BR>
+                            background-color: #000080;  <BR><BR>
+                            clear: left;  <BR><BR>
+                            text-align: center;  <BR><BR>
+                        }  <BR><BR>
+                          
+                        nav {  <BR><BR>
+                            float: left;  <BR><BR>
+                            max-width: 160px;  <BR><BR>
+                            margin: 0;  <BR><BR>
+                            padding: 1em;  <BR><BR>
+                        }  <BR><BR>
+                          
+                        nav ul {  <BR><BR>
+                            list-style-type: none;  <BR><BR>
+                            padding: 0;  <BR><BR>
+                        }  <BR><BR>
+                          
+                        nav ul a {  <BR><BR>
+                            text-decoration: none;  <BR><BR>
+                        }  <BR><BR>
+                          
+                        article {  <BR><BR>
+                            margin-left: 170px;  <BR><BR>
+                            border-left: 1px solid gray;  <BR><BR>
+                            padding: 1em;  <BR><BR>
+                            overflow: hidden;  <BR><BR>
+                        }  
+                        &LT;/style&GT;<BR><BR>
+                        &LT;/head&GT;  <BR><BR>
+                        &LT;body&GT;<BR><BR>
+                          
+                        &LT;div class="container"&GT;<BR><BR>
+                          
+                        &LT;header&GT; 
+                        &LT;h1&GT; Tutorials Gallery &LT;/h1&GT; <BR><BR>
+                        &LT;/header&GT;<BR><BR>
+                          
+                        &LT;nav&GT; <BR><BR>
+                        &LT;ul&GT;<BR><BR>
+                        &LT;li&GT; &LT;a href="#"&GT;HTML &LT;/a&GT; &LT;/li&GT;  <BR><BR>
+                        &LT;li&GT; &LT;a href="#"&GT;CSS &LT;/a&GT; &LT;/li&GT;  <BR><BR>
+                        &LT;li&GT; &LT;a href="#"&GT;JavaScript &LT;/a&GT; &LT;/li&GT;<BR><BR> 
+                        &LT;/ul&GT;  <BR><BR>
+                        &LT;/nav&GT;  <BR><BR>
+                        &LT;article&GT;  <BR><BR>
+                        &LT;h1&GT;HTML &LT;/h1&GT; <BR><BR>
+                        &LT;p&GT;HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html. Our HTML tutorial is   
+                        developed for beginners and professionals. &LT;/p&GT;  <BR><BR>
+                        &LT;p&GT;TML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is Markup Language? &LT;/p&GT;
+                        <BR><BR>
+                        &LT;/article&GT;  <BR><BR>
+                        &LT;footer&GT;Copyright © javatpoint.com&LT;/footer&GT;  <BR><BR>
+                        &LT;/div&GT; <BR><BR>
+                        &LT;/body&GT;<BR><BR>
+                        &LT;/html&GT;
+                </div> 
+            </div>
+    </div>
+    <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+    <BR>
+        <BR>
+
+
+
+<div style="background-color:#a4a4a4;">
+                    <h3>EXAMPLE</h3>
+                    <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                        <div class="w3-code notranslate htmlHigh">
+                                <!DOCTYPE html>  
+                                <html>  
+                                <head>  
+                                <style>  
+                                div.container {  
+                                    width: 100%;  
+                                    border: 1px solid gray;  
+                                }  
+                                  
+                                header, footer {  
+                                    padding: 1em;  
+                                    color: white;  
+                                    background-color: #000080;  
+                                    clear: left;  
+                                    text-align: center;  
+                                }  
+                                  
+                                nav {  
+                                    float: left;  
+                                    max-width: 160px;  
+                                    margin: 0;  
+                                    padding: 1em;  
+                                }  
+                                  
+                                nav ul {  
+                                    list-style-type: none;  
+                                    padding: 0;  
+                                }  
+                                  
+                                nav ul a {  
+                                    text-decoration: none;  
+                                }  
+                                  
+                                article {  
+                                    margin-left: 170px;  
+                                    border-left: 1px solid gray;  
+                                    padding: 1em;  
+                                    overflow: hidden;  
+                                }  
+                                </style>  
+                                </head>  
+                                <body>  
+                                  
+                                <div class="container">  
+                                  
+                                <header>  
+                                <h1>Tutorials Gallery</h1>  
+                                </header>  
+                                  
+                                <nav>  
+                                <ul>  
+                                <li><a href="#">HTML</a></li>  
+                                <li><a href="#">CSS</a></li>  
+                                <li><a href="#">JavaScript</a></li>  
+                                </ul>  
+                                </nav>  
+                                <article>  
+                                <h1>HTML</h1>  
+                                <p>HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html. Our HTML tutorial is   
+                                developed for beginners and professionals.</p>  
+                                <p>TML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is Markup Language?</p>  
+                                </article>  
+                                <footer>Copyright © </footer>  
+                                </div>  
+                                </body>  
+                                </html>  
+                        </div> 
+                    </div>
+            </div>
+            <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+            <BR>
+                <BR>
+
+
+
+
+
+<FONT ALIGN=left>
+        <H1>CSS Flexbox</H1> </FONT>
+        <P>Flexbox is a new layout mode in CSS3..
+                
+        <B> Advantage:</B> It ensures that the page layout must accommodate different screen sizes and different display devices.
+                                    
+        <b>Disadvantage: </b> It does not work in IE10 and earlier.
+        </P>
+<BR>
+<BR>
+
+
+
+
+<div style="background-color:#a4a4a4;">
+        <h3>EXAMPLE</h3>
+        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+        <div class="w3-code notranslate htmlHigh">
+                    
+                &LT;!DOCTYPE html&GT;  <BR><BR>
+                    &LT;html&GT; <BR><BR>
+                    &LT;head&GT;  <BR><BR>
+                    &LT;style&GT;  <BR><BR>
+                    .flex-container {  <BR><BR>
+                    display: -webkit-flex;  <BR><BR>
+                    display: flex;    <BR><BR>
+                     -webkit-flex-flow: row wrap;  <BR><BR>
+                    flex-flow: row wrap;  <BR><BR>
+                    text-align: center;  <BR><BR>
+            }  <BR><BR>
+  
+                .flex-container > * {  <BR><BR>
+                    padding: 15px;  <BR><BR>
+                    -webkit-flex: 1 100%;  <BR><BR>
+                 flex: 1 100%;  <BR><BR>
+            }  <BR><BR>
+  
+            .article {  <BR><BR>
+             text-align: left;  <BR><BR>
+            }  
+            <BR><BR>
+            header {background: #000080;color:white;} <BR><BR> 
+            footer {background: #000080;color:white;} <BR><BR> 
+            .nav {background:#eee;}  <BR><BR>
+  
+            .nav ul {  <BR><BR>
+             list-style-type: none;  <BR><BR>
+             padding: 0;  <BR><BR>
+            }  <BR><BR>
+            .nav ul a {  <BR><BR>
+            text-decoration: none;  <BR><BR>
+                }  
+                <BR><BR>
+            @media all and (min-width: 768px) {  <BR><BR>
+            .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}  <BR><BR>
+             .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}  <BR><BR>
+                footer {-webkit-order:3;order:3;}  <BR><BR>
+                }  
+                &LT;/style&GT;<BR><BR>
+                    &LT;/head&GT;  <BR><BR>
+                    &LT;body&GT;<BR><BR>
+
+&LT;div class="flex-container"&GT;  <BR><BR>
+&LT;header&GT;  <BR><BR>
+&LT;h1&GT;City Gallery&LT;/h1&GT;  <BR><BR>
+&LT;/header&GT;  <BR><BR>
+  
+&LT;nav class="nav"&GT;  <BR><BR>
+&LT;ul&GT;  <BR><BR>
+&LT;li&GT;&LT;a href="#"&GT;HTML&LT;/a&GT;&LT;/li&GT;  <BR><BR>
+&LT;li&GT;&LT;a href="#"&GT;CSS&LT;/a&GT;&LT;/li&GT;  <BR><BR>
+&LT;li&GT;&LT;a href="#"&GT;JavaScript&LT;/a&GT;&LT;/li&GT; <BR><BR>
+&LT;/ul&GT;  <BR><BR>
+&LT;/nav&GT;  <BR><BR>
+  
+&LT;article class="article"&GT; <BR><BR>
+&LT;h1&GT;HTML&LT;/h1&GT;  <BR><BR>
+&LT;p&GT;HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html.<BR><BR> Our HTML tutorial is   
+developed for beginners and professionals.&LT;/p&GT;  <BR><BR>
+&LT;p&GT;TML is an acronym which stands for Hyper Text Markup Language.<BR><BR> Let's see what is Hyper Text and what is Markup Language?&LT;/p&GT;  <BR><BR>
+&LT;p&GT;&LT;strong>Resize this page to see what happens!&LT;/strong&GT;&LT;/p&GT;  <BR><BR>
+&LT;/article&GT;  <BR><BR>
+  
+&LT;footer>Copyright © &LT;/footer&GT;  <BR><BR>
+&LT;/div&GT;  <BR><BR>
+  
+&LT;/body>  <BR><BR>
+&LT;/html>  <BR><BR>
+
+                            </div> 
+                    </div>
+            </div>
+            <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+
+<BR>
+    <BR>
+
+
+
+
+
+<div style="background-color:#a4a4a4;">
+        <h3>OUTPUT</h3>
+        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+        <div class="w3-code notranslate htmlHigh">
+                            
+                <!DOCTYPE html>  
+                <html>  
+                <head>  
+                <style>  
+                .flex-container {  
+                    display: -webkit-flex;  
+                    display: flex;    
+                    -webkit-flex-flow: row wrap;  
+                    flex-flow: row wrap;  
+                    text-align: center;  
+                }  
+                  
+                .flex-container > * {  
+                    padding: 15px;  
+                    -webkit-flex: 1 100%;  
+                    flex: 1 100%;  
+                }  
+                  
+                .article {  
+                    text-align: left;  
+                }  
+                  
+                header {background: #000080;color:white;}  
+                footer {background: #000080;color:white;}  
+                .nav {background:#eee;}  
+                  
+                .nav ul {  
+                    list-style-type: none;  
+                    padding: 0;  
+                }  
+                .nav ul a {  
+                    text-decoration: none;  
+                }  
+                  
+                @media all and (min-width: 768px) {  
+                    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}  
+                    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}  
+                    footer {-webkit-order:3;order:3;}  
+                }  
+                </style>  
+                </head>  
+                <body>  
+                  
+                <div class="flex-container">  
+                <header>  
+                <h1>City Gallery</h1>  
+                </header>  
+                  
+                <nav class="nav">  
+                <ul>  
+                <li><a href="#">HTML</a></li>  
+                <li><a href="#">CSS</a></li>  
+                <li><a href="#">JavaScript</a></li>  
+                </ul>  
+                </nav>  
+                  
+                <article class="article">  
+                <h1>HTML</h1>  
+                <p>HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html. Our HTML tutorial is   
+                developed for beginners and professionals.</p>  
+                <p>TML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is Markup Language?</p>  
+                <p><strong>Resize this page to see what happens!</strong></p>  
+                </article>  
+                  
+                <footer>Copyright © </footer>  
+                </div>  
+                  
+                </body>  
+                </html>          
+        
+                </div> 
+            </div>
+        </div>
+    <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>

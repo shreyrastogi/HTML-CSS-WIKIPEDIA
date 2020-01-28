@@ -1,0 +1,378 @@
+<html>
+<title>
+HTML FORM
+</title>
+<head>
+<FONT ALIGN=left>
+<H1> HTML FORM </H1> </FONT>
+<a href="list.html"><input type="image" src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_1280.png" alt="Submit" align="left" width="48" height="48"></a>           
+<a href="iframes (1).html"><input type="image" src="https://www.freeiconspng.com/uploads/arrow-icon-28.png" alt="Submit" align="right" width="70" height="70"></a>
+<br>
+<P>An <B>HTML form</B> is a <I>section</I> of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc.
+<BR><BR> An HTML form facilitates the user to enter data that is to be sent to the server for processing.
+</P>
+<FONT ALIGN=left>
+        <H1> Why use HTML form </H1> </FONT>
+<p> HTML forms are required if you want to collect some data from of the site visitor.
+  <br><br>For example: If a user want to purchase some items on internet, he/she must fill the form such as shipping address and credit/debit card details so that item can be sent to the given address.</p>
+  <div style="background-color:#a4a4a4;">
+        <h3>HTML form syntax</h3>
+        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+            <div class="w3-code notranslate htmlHigh">
+                    &lt;form action="server url" method="get|post"&gt;
+                    <br><br>
+                    &lt;/form&gt;
+            </div> 
+        </div>
+</div>
+<div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div> 
+
+<FONT ALIGN=left>
+   <H1>HTML Form Tags</H1> </FONT>
+<p>Let's see the list of HTML 5 form tags.</p>
+
+   <html>
+           <head>
+                        <div style="background-color:#a4a4a4;">
+                   <font color=white>
+                           <body bgcolor=white>       
+                           </body>
+                   </font>
+         
+                   <table border=2>
+                           <tr><td>TAG</td><td>DESCRIPTION</td></tr>
+                           <tr><td>&lt; form      &gt;</td><td>It defines an HTML form to enter inputs by the used side.</td></tr>
+                           <tr><td>&lt; input     &gt;</td><td>It defines an input control.</td></tr>
+                           <tr><td>&lt; textarea  &gt;</td><td>It defines a multi-line input control.</td></tr>
+                           <tr><td>&lt; label     &gt;</td><td>It defines a label for an input element.</td></tr>
+                           <tr><td>&lt; fieldset  &gt;</td><td>It groups the related element in a form.</td></tr>
+                           <tr><td>&lt; legend    &gt;</td><td>It defines a caption for a &lt;fieldset&gt; element.</td></tr>
+                           <tr><td>&lt; select    &gt;</td><td>It defines a drop-down list.</td></tr>
+                           <tr><td>&lt; optgroup  &gt;</td><td>It defines a group of related options in a drop-down list.</td></tr>
+                           <tr><td>&lt; option    &gt;</td><td>It defines an option in a drop-down list.</td></tr>
+                           <tr><td>&lt; button    &gt;</td><td>It defines a clickable button.</td></tr>
+                           <tr><td>&lt; datalist  &gt;</td><td>It specifies a list of pre-defined options for input control.</td></tr>
+                           <tr><td>&lt; keygen    &gt;</td><td>It defines a key-pair generator field for forms.</td></tr>
+                           <tr><td>&lt; output    &gt;</td><td>It defines the result of a calculation.</td></tr>
+                   </table>
+                </div>
+<FONT ALIGN=left>
+<H1>HTML TextField Control</H1> </FONT>
+<p>The type="text" attribute of input tag creates textfield control also known as single line textfield control. 
+<br> <br>The name attribute is optional, but it is required for the server side component such as JSP, ASP, PHP etc.</p>
+
+<div style="background-color:#a4a4a4;">
+                <h3>EXAMPLE</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                    <div class="w3-code notranslate htmlHigh">
+                                &lt;form&gt; 
+                                <br><br>
+                                        First Name: &lt;input type="text" name="firstname"/&gt; 
+                                        <br/>  <br>
+                                        Last Name:  &lt;input type="text" name="lastname"/&gt;  
+                                        <br/>  <br>
+                                &lt;/form&gt;  
+                    </div> 
+                </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+<BR><BR>
+        <div style="background-color:#a4a4a4;">
+                <h3>OUTPUT</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                    <div class="w3-code notranslate htmlHigh">
+                        <form>  
+                                First Name: <input type="text" name="firstname"/> <br/>  <BR>
+                                Last Name:  <input type="text" name="lastname"/> <br/>  <BR>
+                             </form>  
+                            
+                    </div>  
+                </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+<FONT ALIGN=left>
+<FONT ALIGN=left>
+<H1>Label Tag in Form</H1> </FONT> 
+<p>It is considered better to have label in form.                      <br><br>
+ As it makes the code parser/browser/user friendly.                    <br><br>
+If you click on the label tag, it will focus on the text control.      <br><br>
+To do so, you need to have for attribute in label tag that must be same as id attribute of input tag. </p> 
+<div style="background-color:#a4a4a4;">
+                <h3>EXAMPLE</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                        
+                        &lt;form&gt;  
+                        &lt;label for="firstname"&gt;First Name: &lt;/label&gt;      <br/><br/>
+                        &lt;input type="text" id="firstname" name="firstname"/&gt;   <br/><br/>  
+                        &lt;label for="lastname">Last Name: &lt;/label&gt;           <br/><br/>
+                        &lt;input type="text" id="lastname" name="lastname"/&gt;     <br/><br/>  
+                        &lt;/form&gt;            
+
+                                </div> 
+                        </div>
+                </div>
+                <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+                <br/><br/>
+                <div style="background-color:#a4a4a4;">
+                        <h3>OUTPUT</h3>
+                        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                        <div class="w3-code notranslate htmlHigh">
+                                
+                                <form>  
+                                        <label for="firstname">First Name: </label>  
+                                                  <input type="text" id="firstname" name="firstname"/> <br/><br/>   
+                                       <label for="lastname">Last Name: </label>  
+                                                  <input type="text" id="lastname" name="lastname"/> <br/> <br/>  
+                                     </form>  
+        
+                                        </div> 
+                                </div>
+                        </div>
+                        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+
+<FONT ALIGN=left>
+                <H1>HTML Password Field Control</H1> </FONT> 
+                <p>The password is not visible to the user in password field control.</p> 
+                <div style="background-color:#a4a4a4;">
+                <h3>EXAMPLE</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                        &lt; form &gt;                                                   <br/><br/>
+                        &lt; label for="password"&gt; Password &lt; /label &gt;          <br/><br/>   
+                        &lt; input type="password" id="password" name="password"/&gt;    <br/><br/>  
+                         &lt; /form &gt;   
+                        </div> 
+                 </div>
+         </div>
+ <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+ <br/><br/> 
+ <div style="background-color:#a4a4a4;">
+        <h3>OUTPUT</h3>
+        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+        <div class="w3-code notranslate htmlHigh">
+                <form>  
+                        <label for="password">Password: </label> <BR>  <BR> 
+                                  <input type="password" id="password" name="password"/> <br/>  <BR>  
+                    </form>    
+                </div> 
+         </div>
+ </div>
+<div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+                        
+<FONT ALIGN=left>
+<H1>HTML 5 Email Field Control</H1> </FONT> 
+<p>The email field in new in HTML 5. It validates the text for correct email address.<br/><br/>
+  You must use @ and . in this field. </p> 
+                <div style="background-color:#a4a4a4;">
+                <h3>EXAMPLE</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                        &lt; form &gt;                                             <br/><br/>
+                        &lt; label for="email"&gt;  email  &lt;/label&gt;          <br/><br/>  
+                        &lt; input type="email" id="email" name="email"/&gt;       <br/><br/>    
+                        &lt; /form &gt;   
+                         </div> 
+                </div>
+        </div>
+ <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+ <br/><br/>                       
+ <div style="background-color:#a4a4a4;">
+        <h3>OUTPUT</h3>
+        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+        <div class="w3-code notranslate htmlHigh">
+                <form>  
+                        <label for="email">Email: </label>  
+                                  <input type="email" id="email" name="email"/> <br/>   <br/><br/> 
+                    </form>  
+                 </div> 
+        </div>
+</div>
+<div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+                
+
+
+ <FONT ALIGN=left>
+ <H1>Radio Button Control</H1> </FONT> 
+ <p>    The radio button is used to select one from multiple options. It is used in gender, quiz questions etc.   <br/><br/>
+        If you use one name for all the radio buttons, only one radio button can be selected at a time.           </p> 
+                <div style="background-color:#a4a4a4;">
+                <h3>EXAMPLE</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                         &lt; form &gt;                                                               <br/><br/>
+                         &lt;label for="gender"&gt;Gender: &lt;/label&gt;                             <br/><br/>
+                         &lt;input type="radio" id="gender" name="gender" value="male"/&gt;Male       <br/><br/>
+                         &lt;input type="radio" id="gender" name="gender" value="female"/&gt;Female   <br/><br/>  
+                         &lt; /form &gt;   
+
+                        </div> 
+                  </div>
+         </div>
+ <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+
+ <div style="background-color:#a4a4a4;">
+        <h3>OUTPUT</h3>
+        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+        <div class="w3-code notranslate htmlHigh">
+                <form>  
+                        <label for="gender">Gender: </label>  <br/><br/>
+                                  <input type="radio" id="gender" name="gender" value="male"/>Male  <br/><br/>
+                                  <input type="radio" id="gender" name="gender" value="female"/>Female <br/><br/>  
+                    </form>  
+
+                </div> 
+          </div>
+ </div>
+<div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+
+<FONT ALIGN=left>
+        <H1>Checkbox Control</H1> </FONT> 
+        <p>   The checkbox control is used to check multiple options from given checkboxes.       </p> 
+                       <div style="background-color:#a4a4a4;">
+                       <h3>EXAMPLE</h3>
+                       <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                       <div class="w3-code notranslate htmlHigh">
+                                &lt; form &gt;                                                                  <br/><br/>
+                                 Hobby:                                                                         <br/><br/>
+                                 &lt; input type="checkbox" id="cricket" name="cricket" value="cricket"/&gt;    <br/><br/>
+                                 &lt;label for="cricket"&gt;Cricket   &lt;/label&gt;                            <br/><br/>
+                                 &lt;input type="checkbox" id="football" name="football" value="football"/&gt;  <br/><br/>
+                                 &lt;label for="football"&gt;Football  &lt;/label&gt;                           <br/><br/>
+                                 &lt;input type="checkbox" id="hockey" name="hockey" value="hockey"/&gt;        <br/><br/>
+                                 &lt;label for="hockey"&gt;Hockey      &lt;/label&gt;                           <br/><br/>
+                                 &lt; /form &gt;   
+       
+                               </div> 
+                         </div>
+                </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+        <br/><br/>
+        <br/><br/>
+        <div style="background-color:#a4a4a4;">
+                <h3>OUTPUT</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                        <form>  
+                                Hobby:<br>  
+                                              <input type="checkbox" id="cricket" name="cricket" value="cricket"/>  
+                                                 <label for="cricket">Cricket</label>   <br/><br/>
+                                              <input type="checkbox" id="football" name="football" value="football"/>  
+                                                 <label for="football">Football</label>   <br/><br/>
+                                              <input type="checkbox" id="hockey" name="hockey" value="hockey"/>  
+                                                 <label for="hockey">Hockey</label>  
+                                </form>  
+                        </div> 
+                  </div>
+         </div>
+ <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+
+<FONT ALIGN=left>
+ <H1>HTML Form Example</H1> </FONT> 
+<p>      Let's see a simple example of creating HTML form.   </p> 
+        <div style="background-color:#a4a4a4;">
+                <h3>EXAMPLE</h3>
+                <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+                        &lt; form &gt;                                                                  `                                               <br/><br/>
+                        &lt;table&gt;                                                                                                                   <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;td class="tdLabel"&gt; &lt;label for="register_name" class="label"&gt;  Enter name: &lt;/label &gt; &lt;td&gt;              <br/><br/>
+                        &lt;td&gt; &lt;input type="text" name="name" value="" id="register_name" style="width:160px"/&gt; &lt;td&gt;                    <br/><br/>
+                        &lt;/tr&gt;                                                                                                                     <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;td class="tdLabel"><label for="register_password" class="label">Enter password:</label>&lt;td&gt;                           <br/><br/>
+                        &lt;td>&lt;input type="password" name="password" id="register_password" style="width:160px"/>&lt;td&gt;                         <br/><br/>
+                        &lt;/tr&gt;                                                                                                                     <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;td class="tdLabel"&gt; &lt;label for="register_email" class="label"&gt; Enter Email: &lt /label &gt; &lt;td&gt;             <br/><br/>
+                        &lt; input type="email" name="email" value="" id="register_email" style="width:160px"/&gt; &lt;td&gt;                           <br/><br/>
+                        &lt;/tr&gt;                                                                                                                     <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;td class="tdLabel"&gt; &lt; label for="register_gender" class="label"&gt; Enter Gender: &lt;/labe&gt; &lt;td&gt;            <br/><br/>
+                        &lt;td&gt;                                                                                                                      <br/><br/>
+                        &lt;input type="radio" name="gender" id="register_gendermale" value="male"/&gt;                                                 <br/><br/>
+                        &lt;label for="register_gendermale"male&gt;    &lt;/label&gt;                                                                   <br/><br/>
+                        &lt;input type="radio" name="gender" id="register_genderfemale" value="female"/&gt;                                             <br/><br/>  
+                        &lt;label for="register_genderfemale"&gt; female &lt;/label &gt;                                                                <br/><br/>
+                        &lt;/td&gt;                                                                                                                     <br/><br/>
+                        &lt;/tr&gt;                                                                                                                     <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;td class="tdLabel"&gt; &lt; label for="register_country" class="label"&gt; Select Country:&lt; /label&gt; &lt;td&gt;        <br/><br/>
+                        &lt;td&gt; &lt;select name="country" id="register_country" style="width:160px"&gt;                                              <br/><br/> 
+                        &lt;option value="india"&gt; india   &lt;/option &gt;                                                                           <br/><br/>
+                        &lt;option value="pakistan"&gt; pakistan  &lt;/option &gt;                                                                      <br/><br/>
+                        &lt;option value="africa"&gt;africa   &lt;/option &gt;                                                                          <br/><br/>
+                        &lt;option value="china"&gt; china   &lt;/option &gt;                                                                           <br/><br/>
+                        &lt;option value="other"&gt; other   &lt;/option &gt;                                                                           <br/><br/>
+                        &lt;/select &gt;                                                                                                                <br/><br/>    
+                        &lt;td&gt;                                                                                                                      <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;tr&gt;                                                                                                                      <br/><br/>
+                        &lt;td colspan="2"&gt;  &lt;div align="right"&lt; &gt; input type="submit" id="register_0" value="register"/ &gt;               <br/><br/>
+                        &lt;/div &gt;   &lt; /td &gt;                                                                                                   <br/><br/>
+                        &lt;/tr &gt;                                                                                                                    <br/><br/>
+                        &lt;/table&gt;                                                                                                                  <br/><br/>
+                        &lt; /form &gt;   
+               
+                                       </div> 
+                                 </div>
+                        </div>
+                <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+        
+                <div style="background-color:#a4a4a4;">
+                        <h3>OUTPUT</h3>
+                        <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                        <div class="w3-code notranslate htmlHigh">
+                                <form action="#">  
+                                        <table>  
+                                        <tr>  
+                                            <td class="tdLabel"><label for="register_name" class="label">Enter name:</label></td>  
+                                            <td><input type="text" name="name" value="" id="register_name" style="width:160px"/></td>  
+                                        </tr>  
+                                        <tr>  
+                                            <td class="tdLabel"><label for="register_password" class="label">Enter password:</label></td>  
+                                            <td><input type="password" name="password" id="register_password" style="width:160px"/></td>  
+                                        </tr>  
+                                        <tr>  
+                                            <td class="tdLabel"><label for="register_email" class="label">Enter Email:</label></td>  
+                                            <td  
+                                        ><input type="email" name="email" value="" id="register_email" style="width:160px"/></td>  
+                                        </tr>  
+                                        <tr>  
+                                            <td class="tdLabel"><label for="register_gender" class="label">Enter Gender:</label></td>  
+                                            <td>  
+                                        <input type="radio" name="gender" id="register_gendermale" value="male"/>  
+                                        <label for="register_gendermale">male</label>  
+                                        <input type="radio" name="gender" id="register_genderfemale" value="female"/>  
+                                        <label for="register_genderfemale">female</label>  
+                                            </td>  
+                                        </tr>  
+                                        <tr>  
+                                            <td class="tdLabel"><label for="register_country" class="label">Select Country:</label></td>  
+                                            <td><select name="country" id="register_country" style="width:160px">  
+                                            <option value="india">india</option>  
+                                            <option value="pakistan">pakistan</option>  
+                                            <option value="africa">africa</option>  
+                                            <option value="china">china</option>  
+                                            <option value="other">other</option>  
+                                        </select>  
+                                        </td>  
+                                        </tr>  
+                                        <tr>  
+                                            <td colspan="2"><div align="right"><input type="submit" id="register_0" value="register"/>  
+                                        </div></td>  
+                                        </tr>  
+                                        </table>  
+                                        </form>  
+                                               </div> 
+                                         </div>
+                                </div>
+                        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px"></div>
+               
+                                                        
+                        
+           </head>
+   </html>
+</head>
+</html>

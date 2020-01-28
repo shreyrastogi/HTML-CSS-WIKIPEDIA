@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>CSS  Overflow</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h2>CSS Layout-Overflow</h2>
+            <a href="CSS_OPACITY.html"><input type="image" src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_1280.png" alt="Submit" align="left" width="48" height="48"></a>
+            <a href="padding.html"><input type="image" src="https://www.freeiconspng.com/uploads/arrow-icon-28.png" alt="Submit" align="right" width="70" height="70"></a>
+        </div>
+        <br>
+        <br>
+        <div style="background-color: lightcyan">
+            <p>The CSS overflow property controls what happens to content that is too big to fit into an area.<br><br>The overflow property specifies whether to clip content or to add scrollbars when the content of an element is too big to fit in a specified area.<br><br></p>
+        </div>
+        <div>
+            <h3>
+                The overflow property has the following values:
+            </h3>
+            <br>
+            <p>
+            <i>visible</i> - Default. The overflow is not clipped. It renders outside the element's box<br><br><i>hidden</i> - The overflow is clipped, and the rest of the content will be invisible.
+			<br><br><i>scroll</i> - The overflow is clipped, but a scrollbar is added to see the rest of the content<br><br><i>auto</i> - If overflow is clipped, a scrollbar should be added to see the rest of the content
+            </p>
+            <br><br>
+        </div>
+        <div style="background-color:#f96745;">
+            <h2>EXAMPLE</h2>
+            <div style="background-color:#ffffff;margin:0.5px 5px 5px 5px;padding-top: 8spx;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;/head&gt;<br>
+
+&lt;style&gt;<br>
+#overflowTest {<br>
+    background: #3AAC90;<br>
+    color: white;<br>
+    padding: 15px;<br>
+    width: 50%;<br>
+    height: 100px;<br>
+    overflow: scroll;<br>
+    border: 1px solid #ccc;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;body&gt;<br><br>
+&lt;div id="overflowTest"&gt;<br>
+This text is really long and the height of its container is only 100 pixels.<br>
+Therefore, a scrollbar is added to help the reader to scroll the content.<br>
+<br>
+&lt;/div&gt;
+&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>&lt;/html&gt;
+<br><br><br><br>
+
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+           <style>
+				#overflowTest {
+				background: #3AAC90;
+				color: white;
+				padding: 15px;
+				width: 50%;
+				height: 50px;
+				overflow: scroll;
+				border: 1px solid #ccc;
+				}
+			</style>
+		   <h3>OUTPUT</h3>
+		   <div id="overflowTest">This text is really long and the height of its container is only 50 pixels. Therefore, a scrollbar is added to help the reader to scroll the content.
+            <br>
+			<br>
+			<br>
+			<br>
+			<br>
+        </div>
+		<br>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+		
+		<br><br><br><br>
+    </body>
+</html>
+
+
+

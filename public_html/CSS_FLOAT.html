@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h2>CSS FLOAT</h2>
+            <a href="CSS_DISPLAY.html"><input type="image" src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_1280.png" alt="Submit" align="left" width="48" height="48"></a>
+            <a href="CSS_FONT.html"><input type="image" src="https://www.freeiconspng.com/uploads/arrow-icon-28.png" alt="Submit" align="right" width="70" height="70"></a>
+        </div>
+        <br>
+        <HR>The float property is used for positioning and layout on web pages.<HR>
+        <br>
+        <H3>FLOAT PROPERTIES</H3>
+        <div style="background-color: lightcyan">
+            <p>
+
+
+
+<CAPTION>The float property can have one of the following values:</CAPTION>
+<TABLE BORDER="20">
+
+<TR><TD>left</TD> -<TD> The element floats to the left of its container</TD></TR>
+<TR><TD>right</TD> <TD>The element floats to the right of its container</TD></TR>
+<TR><TD>none </TD>- <TD>The element does not float (will be displayed just where it occurs in the text). This is default</TD></TR>
+<TR><TD>inherit </TD>-<TD> The element inherits the float value of its parent</TD></TR>
+</TABLE>
+In its simplest use, the float property can be used to wrap text around images.
+.</p>
+        </div>
+        <div>
+
+        <div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">&lt;!DOCTYPE html&gt;
+<br>&lt;html&gt;
+<br>&lt;head&gt;
+<br>&lt;style&gt;
+<br>img {
+   <br> float: right;
+<br>}
+<br>&lt;/style&gt;
+<br>&lt;/head&gt;
+<br>&lt;body&gt;
+
+<br>&lt;p&gt;In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.&lt;/p&gt;
+
+<br>&lt;p&gt;&lt;img src="piceg.jpg" alt="lotus" style="width:170px;height:170px;margin-left:15px;"&gt;
+<br>Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean or simply lotus, is one of two extant species of aquatic plant in the family Nelumbonaceae. The Linnaean binomial Nelumbo nucifera is the currently recognized name for this species, which has been classified under the former names, Nelumbium speciosum Willd. and Nymphaea nelumbo, among others. (These names are obsolete synonyms and are avoided in current works.) This plant is an aquatic perennial. Under favorable circumstances its seeds may remain viable for many years, with the oldest recorded lotus germination being from that of seeds 1,300 years old recovered from a dry lakebed in northeastern China&lt;/p&gt;
+
+<br>&lt;/body&gt;
+<br>&lt;/html&gt;
+
+</div>
+
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+            <h3>OUTPUT</h3>
+            <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+            <button><a href="img_float.html" target="_self"><h3>OUTPUT</H3></a></button>
+            </div>
+        </div>
+
+	           <br>
+
+	           <br>
+	           <H3> The clear Property</H3>
+	           <div style="background-color: lightcyan">
+	               <p>
+
+
+	   The clear property specifies what elements can float beside the cleared element and on which side.<br>
+
+	   <b>The clear property can have one of the following values:</b>
+	   <table>
+	   <tr><td>none</td> -<td> Allows floating elements on both sides</td></tr>
+	   <tr><td>left</td> -<td> No floating elements allowed on the left side</td></tr>
+	   <tr><td>right</td> -<td> No floating elements allowed on the right side</td></tr>
+	   <tr><td>both </td> -<td> No floating elements allowed on either the left or the right side</td></tr>
+	   <tr><td>inherit </td> -<td> The element inherits the clear value of its parent</td></tr><br></table>
+	   The most common way to use the clear property is after you have used a float property on an element.<br>
+
+	   When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+<br>The following example clears the float to the left. Means that no floating elements are allowed on the left side (of the div):
+	   </p>
+	           </div>
+        </div>
+        <br>
+        <br>
+
+
+		        <H3>The clearfix Hack</H3>
+		        <div style="background-color: lightcyan">
+		            <p>
+
+
+
+If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container<br>
+Then we can add overflow: auto; to the containing element to fix this problem<br>
+The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages
+
+
+		</p>
+		</div>
+		</div><br><br>
+		 <H3> same width box</H3>
+		        <div style="background-color: lightcyan">
+
+
+
+
+<div>
+
+        <div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+
+&lt;h2&gt;<br>Grid of Boxes&lt;/h2&gt;<br>
+&lt;p&gt;<br>Float boxes side by side:&lt;/p&gt;<br>
+
+&lt;div class="clearfix"&gt;<br>
+  &lt;div class="box" style="background-color:#bbb"&gt;<br>
+    &lt;p&gt;<br>Some text inside the box.&lt;/p&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="box" style="background-color:#ccc"&gt;<br>
+    &lt;p&gt;<br>Some text inside the box.&lt;/p&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="box" style="background-color:#ddd"&gt;<br>
+    &lt;p&gt;<br>Some text inside the box.</p&gt;<br>
+  &lt;/div&gt;<br>
+&lt;/div&gt;<br>
+
+&lt;p&gt;<br>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.&lt;/p>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+</div>
+
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+            <h3>OUTPUT</h3>
+            <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+<button><a href="same_width.html" target="_self"><h3>OUTPUT</H3></a></button>
+            </div>
+        </div>
+
+	           <br>
+
+	           <br>
+
+
+		</p>
+		</div>
+		</div><br><br><h3>same height box</h3>
+				        <div style="background-color: lightcyan">
+				            <p>
+
+
+        <div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 300px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+
+&lt;h2&gt;<br>Equal Height Boxes</h2&gt;<br>
+&lt;p&gt;<br>Floating boxes with equal heights:</p&gt;<br>
+
+&lt;div class="clearfix"&gt;<br>
+  &lt;div class="box" style="background-color:#bbb"&gt;<br>
+    &lt;h2&gt;<br>Box 1&lt;/h2&gt;<br>
+    &lt;p>Some content, some content, some content&lt;/p&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="box" style="background-color:#ccc"&gt;<br>
+    &lt;h2&gt;<br>Box 2&lt;/h2&gt;<br>
+    &lt;p&gt;<br>Some content, some content, some content&lt;/p&gt;<br>
+    &lt;p&gt;<br>Some content, some content, some content&lt;/p&gt;<br>
+    &lt;p&gt;<br>Some content, some content, some content&lt;/p&gt;<br>
+  &lt;/div&gt;<br>
+&lt;/div&gt;<br>
+
+&lt;p&gt;<br>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the same amount of content in them, but that's not always the case. If you try the example above on a mobile phone (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
+&lt;p&gt;<br>Go back to the tutorial and find another solution, if this is not what you want.</p&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</div>
+
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+
+            <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+            <button><a href="same_height.html" target="_self"><h3>OUTPUT</H3></a></button>
+            </div>
+        </div>
+
+
+
+
+				</p>
+				</div>
+		</div><br><br>
+		<H3>navigation menu</H3>
+		        <div style="background-color: lightcyan">
+		            <p>
+		Use float with a list of hyperlinks to create a horizontal menu
+
+
+
+		.</p>
+		      <div style="background-color:#a4a4a4;">
+			              <h3>EXAMPLE</h3>
+			              <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+			                  <div class="w3-code notranslate htmlHigh">
+			 <br>&lt;!DOCTYPE html&gt;
+			 <br>&lt;html&gt;
+			 <br>&lt;head&gt;
+			 <br>&lt;style&gt;
+			 *<br> {
+			  <br>   box-sizing: border-box;
+			 <br>}
+			 <br>.header, .footer {
+			     <br>background-color: grey;
+			     <br>color: white;
+			     <br>padding: 15px;
+			 <br>}
+			 <br>.column {
+			 <br>    float: left;
+			   <br>  padding: 15px;
+			 <br>}
+			 <br>.clearfix::after {
+			   <br>  content: "";
+			  <br>   clear: both;
+			 <br>    display: table;
+			 <br>}
+			 <br>.menu {
+			 <br>    width: 25%;
+			 <br>}
+			 <br>.content {
+			 <br>    width: 75%;
+			 <br>}
+			 <br>.menu ul {
+			 <br>    list-style-type: none;
+			  <br>   margin: 0;
+			  <br>   padding: 0;
+			 <br>}
+			 <br>.menu li {
+			 <br>    padding: 8px;
+			 <br>    margin-bottom: 8px;
+			     <br>background-color: #33b5e5;
+			     <br>color: #ffffff;
+			 <br>}
+			 .<br>menu li:hover {
+			     <br>background-color: #0099cc;
+			 <br>}
+			 <br>&lt;/style&gt;
+			 <br>&lt;/head&gt;
+			 <br>&lt;body&gt;
+
+			 <br>&lt;div class="header"&gt;
+			   <br>&lt;h1>Chania&lt;/h1&gt;
+			 <br>&lt;/div&gt;
+
+			 <br>&lt;div class="clearfix"&gt;
+			   <br>&lt;div class="column menu"&gt;
+			     <br>&lt;ul&gt;
+			       <br>&lt;li&gt;The Flight&lt;/li&gt;
+			       <br>&lt;li&gt;The City&lt;/li&gt;
+			       <br>&lt;li&gt;The Island&lt;/li&gt;
+			       <br>&lt;li&gt;The Food&lt;/li&gt;
+			     <br>&lt;/ul&gt;
+			   <br>&lt;/div&gt;
+
+			 <br>  &lt;div class="column content"&gt;
+			     <br>&lt;h1&gt;The City&lt;/h1&gt;
+			     <br>&lt;p&gt;Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.&lt;/p&gt;
+			     <br>&lt;p&gt;You will learn more about web layout and responsive web pages in a later chapter.&lt;/p&gt;
+			   <br>&lt;/div&gt;
+			 <br>&lt;/div&gt;
+
+			 <br>&lt;div class="footer"&gt;
+			   <br>&lt;p&gt;Footer Text</p&gt;
+			 <br>&lt;/div&gt;
+
+			 <br>&lt;/body&gt;
+<br>&lt;/html&gt;
+			  </div>
+
+			              </div>
+			          </div>
+			          <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+		             <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+		<button><a href="nav_menu.html" target="_self"><h3>OUTPUT</H3></a></button>
+			              </div>
+        </div>
+		      </div>
+		        <div>
+
+
+
+
+  </body>
+</html>

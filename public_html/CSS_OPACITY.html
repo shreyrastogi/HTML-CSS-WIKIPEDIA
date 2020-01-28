@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h2>CSS OPACITY</h2>
+            <a href="CSS_MARGIN.html"><input type="image" src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_1280.png" alt="Submit" align="left" width="48" height="48"></a>
+            <a href="css overflow.html"><input type="image" src="https://www.freeiconspng.com/uploads/arrow-icon-28.png" alt="Submit" align="right" width="70" height="70"></a>
+        </div>
+        <br>
+        <HR>The opacity property specifies the opacity/transparency of an element<HR>
+        <br>
+        <H3>TRANSPARENT IMAGE</H3>
+        <div style="background-color:lightcyan">
+            <p>
+
+The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:<BR><BR></P>
+        </div>
+
+
+		        </div>
+
+                   <br><br>
+        </div>
+   <H3>Transparent Hover Effect</H3>
+        <div style="background-color: lightcyan">
+		            <p>
+
+The opacity property is often used together with the :hover selector to change the opacity on mouse-over
+		<BR><BR><BR></P>
+<div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+img {<br>
+    opacity: 0.5;
+    <br>filter: alpha(opacity=50); /* For IE8 and earlier */
+<br>}
+
+img:hover {<br>
+    opacity: 1.0;<br<br>>
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+
+&lt;h1&gt;<br>Image Transparency&lt;/h1>
+&lt;p&gt;<br>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:&lt;/p&gt;<br>
+&lt;img src="img_forest.jpg" alt="Forest" width="170" height="100"&gt;<br>
+&lt;img src="img_mountains.jpg" alt="Mountains" width="170" height="100"&gt;<br>
+&lt;img src="img_5terre.jpg" alt="Italy" width="170" height="100"&gt;<br>
+
+&lt;p>&lt;b>Note:&lt;/b&gt;<br> In IE, a !DOCTYPE must be added for the :hover selector to work on other elements than the a element.&lt;/p&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></div>
+
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+
+            <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+<button><a href="hovereffect.html" target="_self"><h3>OUTPUT</H3></a></button>
+            </div>
+        </div>
+
+
+
+
+
+		        </div>
+
+                   <br><br>
+        </div>
+
+
+		 <H3>Transparency using RGBA</H3>
+		        <div style="background-color: lightcyan">
+
+
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.<BR> The following example sets the opacity for the background color and not the text:
+TO KNOW MORE ABOUT RGBA VALUES CLICK ON THE LIK BELOW<BR>
+	<A HREF="https://www.w3schools.com/css/css_colors.asp" TARGET="_PARENT">RGBA VALUES</A>
+
+				<BR><BR><BR></P>
+<div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+div {
+    background: rgb(76, 175, 80);
+    padding: 10px;
+}
+
+div.first {
+    background: rgba(76, 175, 80, 0.1);
+}
+
+div.second {
+    background: rgba(76, 175, 80, 0.3);
+}
+
+div.third {
+    background: rgba(76, 175, 80, 0.6);
+}
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+
+&lt;h1&gt;<br>Transparent Box&lt;/h1&gt;<br>
+&lt;p&gt;<br>With opacity:&lt;/p&gt;<br>
+&lt;div style="opacity:0.1;">&lt;p&gt;<br>10% opacity&lt;/p&gt;<br>&lt;/div&gt;<br>
+&lt;div style="opacity:0.3;">&lt;p&gt;<br>30% opacity&lt;/p&gt;<br>&lt;/div&gt;<br>
+&lt;div style="opacity:0.6;">&lt;p&gt;<br>60% opacity&lt;/p&gt;<br>&lt;/div&gt;<br>
+&lt;div&gt;<br><p&gt;<br>opacity 1</p&gt;<br></div&gt;<br>
+
+&lt;p>With RGBA color values:&lt;/p&gt;<br>
+&lt;div class="first"><p>10% opacity&lt;/p&gt;<br>&lt;/div&gt;<br>
+&lt;div class="second"><p>30% opacity&lt;/p&gt;<br>&lt;/div&gt;<br>
+&lt;div class="third"><p>60% opacity&lt;/p&gt;<br>&lt;/div&gt;<br>
+&lt;div><p>default&lt;/p&gt;<br>&lt;/div&gt;<br>
+
+&lt;p>Notice how the text gets transparent as well as the background color when using the opacity property.</p&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</div>
+
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+
+            <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+<button><a href="rgba.html" target="_self"><h3>OUTPUT</H3></a></button>
+            </div>
+        </div>
+
+
+
+
+				        </div>
+
+		                   <br><br>
+        </div>
+
+
+
+
+				        </div>
+
+		                   <br><br>
+        </div>
+
+
+
+  </div>
+                </div>
+
+		 <H3>TRANSPARENT BOX</H3>
+
+
+<div style="background-color:#a4a4a4;">
+            <h3>EXAMPLE</h3>
+            <div style="background-color:#ffffff;margin:10px 50px 50px 50px;padding-top: 10px;padding-right: 10px">
+                <div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+
+&lt;div class="background"&gt;<br>
+  &lt;div class="transbox"&gt;<br>
+    &lt;p&gt;<br>This is some text that is placed in the transparent box.</p&gt;<br>
+  &lt;/div&gt;<br>
+&lt;/div&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+</div>
+
+            </div>
+        </div>
+        <div style="background-color:#a4a4a4;margin-top: -50px;padding-top: 10px">
+
+            <div style="background-color:#ffffff;margin:0 50px 0px 50px">
+<button><a href="transparent.html" target="_self"><h3>OUTPUT</H3></a></button>
+            </div>
+        </div>
+
+
+
+
+				        </div>
+
+		                   <br><br>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
